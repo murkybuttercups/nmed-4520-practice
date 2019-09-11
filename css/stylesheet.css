@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+ font-family: 'Hepta Slab', serif;
+background-image: url("../images/congruent_pentagon.png");
+    background-size: 700px;
+}
+
+.grid-parent {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4fr 1fr);
+    grid-template-rows: repeat(5fr 2fr);
+}
+
+h1 {
+    grid-column: 5 / span 1;
+    grid-row: 6 / span 2;
+    color: #36454f;
+    text-align: right;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.gif {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 4;
+    transform: scaleX(-1);
+}
